@@ -1,20 +1,20 @@
 #!/bin/sh
 
-mysql -utss_chile -p<senha> -h127.0.0.1 tss_chile -v < queryTSS.sql > tss_chile.csv
+mysql -uchile -p<senha> -h127.0.0.1 chile -v < queryTSS.sql > chile.csv
 
-mysql -utss_argentina -p<senha> -h127.0.0.1 tss_argentina -v < queryTSS.sql > tss_argentina.csv
+mysql -uargentina -p<senha> -h127.0.0.1 argentina -v < queryTSS.sql > argentina.csv
 
-mysql -utss_mexico -p<senha> -h127.0.0.1 tss_mexico -v < queryTSS.sql > tss_mexico.csv
+mysql -umexico -p<senha> -h127.0.0.1 mexico -v < queryTSS.sql > mexico.csv
 
-mysql -utss_brasil -p<senha> -h127.0.0.1 tss_brasil -v < queryTSS.sql > tss_brasil.csv
+mysql -ubrasil -p<senha> -h127.0.0.1 brasil -v < queryTSS.sql > brasil.csv
 
-mysql -utss_rdominicana -p<senha> -h127.0.0.1 tss_rdominicana -v < queryTSS.sql > tss_rdominicana.csv
+mysql -urdominicana -p<senha> -h127.0.0.1 rdominicana -v < queryTSS.sql > rdominicana.csv
 
-mysql -utss_guatemala -p<senha> -h127.0.0.1 tss_guatemala -v < queryTSS.sql > tss_guatemala.csv
+mysql -uguatemala -p<senha> -h127.0.0.1 guatemala -v < queryTSS.sql > guatemala.csv
 
-mysql -utss_colombia -p<senha> -h127.0.0.1 tss_colombia -v < queryTSS.sql > tss_colombia.csv
+mysql -ucolombia -p<senha> -h127.0.0.1 colombia -v < queryTSS.sql > colombia.csv
 
-mysql -utss_peru -p<senha> -h127.0.0.1 tss_peru -v < queryTSS.sql > tss_peru.csv
+mysql -uperu -p<senha> -h127.0.0.1 peru -v < queryTSS.sql > peru.csv
 
 mysql -utssfixo_do -p<senha> -h127.0.0.1 tssfixo_do -v < queryTFX.sql > tssfixo_do.csv
 
