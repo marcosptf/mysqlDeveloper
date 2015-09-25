@@ -1800,7 +1800,6 @@ and         feh.marca_id=(
             group by    subfeh2.pu,subfeh2.marca_id,subfeh2.fornecedor_id)
 );
 
-
 update fornecedor_estoque_historico set preco_simp=preco where           preco>0
 and             (
                 preco_simp is null or
@@ -1901,4 +1900,3 @@ CREATE TABLE `collectionfield` (
   CONSTRAINT `fk_collection_has_field_collection1` FOREIGN KEY (`collection_id`) REFERENCES `collection` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_collection_has_field_field1` FOREIGN KEY (`field_id`) REFERENCES `field` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE = MyISAM AUTO_INCREMENT = 1120113 DEFAULT CHARACTER SET = utf8
-
